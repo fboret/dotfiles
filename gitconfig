@@ -29,6 +29,7 @@
   stat = !git --no-pager diff --stat
 
   # Clean merged branches
+  # Clean merged branches
   sweep = !git branch --merged master | grep -v 'master$' | xargs git branch -d && git remote prune origin
 
   # http://www.jukie.net/bart/blog/pimping-out-git-log
